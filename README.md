@@ -22,3 +22,8 @@
   - 랜덤으로 명언과 그 명언을 말한 사람의 이름을 가져오기 (Math.random())
   - Math.random()을 Float에서 내림으로 정수로 만들기 (Math.floor())
   - 명언을 더 추가해도 명언의 갯수만큼 Math.random()을 곱할 대상을 업데이트 해주기 (quotes.length) 
+
+
+ 랜덤 배경 화면 기능 구현
+  - 배경화면을 랜덤으로 가져오기
+  - js에서 소스를 만들어 html 속 body에 추가시키기
