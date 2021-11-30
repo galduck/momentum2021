@@ -27,3 +27,14 @@
  랜덤 배경 화면 기능 구현
   - 배경화면을 랜덤으로 가져오기
   - js에서 소스를 만들어 html 속 body에 추가시키기
+
+
+ 2021.11.30.Tue.
+
+ TO DO LIST 기능 구현 (ADD TO DO)
+  - input을 submit 해도 새로고침이 일어나지 않음
+  - 입력받은 input을 저장해 두기
+  - input칸을 다시 비우기
+  - ul > li > span > 입력받은 값 이 되도록 JS로 Html 코드 만들어 넣기 
+ 
+ 
