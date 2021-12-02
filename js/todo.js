@@ -14,14 +14,17 @@ function saveToDos(){
 function deleteToDo(event){
   const li = event.target.parentElement; // 원하는 항목 하나를 부모랑 같이 선택
   li.remove(); // 원하는 항목 하나만 삭제  
+  toDos = toDos.filter( (toDo) => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo){ // ToDo를 그리는 역할
   // const li의 li는 태그이름과 같지 않아도 됨 const potato 여도 ok
   // 하지만 createElement("li")의 li는 꼭 태그 이름과 같아야 함
   const li = document.createElement("li"); // li라는 html 태그를 만듦
+  li.id=newTodo.id;
   const span  = document.createElement("span"); // span이라는 html 태그를 만듦
-  span.innerText = newTodo; 
+  span.innerText = newTodo.text; 
   // span안에 새로운 text를 넣음
   // 안에 넣은 새로운 텍스트는 사용자가 form에서 우리에게 준 newTodo 값임 
   const button = document.createElement("button");
@@ -37,8 +40,12 @@ function handleToDoSubmit(event){
   event.preventDefault(); // input을 submit 해도 새로고침이 일어나지 않음 
   const newTodo = toDoInput.value; // 입력받은 todo 값을 newTodo에 저장하기 
   toDoInput.value = ""; // todo 입력 다 받았으면 인풋칸을 비워주기
-  toDos.push(newTodo); // 입력받은 텍스트(newTodo)를 toDos Array에 push하고 
-  paintToDo(newTodo); // 그 다음 화면에 toDo를 그려줌
+  const newTodoObj = {
+    text: newTodo,
+    id: Date.now()
+  };
+  toDos.push(newTodoObj); // 입력받은 텍스트(newTodo)를 toDos Array에 push하고 
+  paintToDo(newTodoObj); // 그 다음 화면에 toDo를 그려줌
   saveToDos(); // 그리고 나서 ToDo들을 저장함 
 }
 
