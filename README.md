@@ -31,7 +31,7 @@
 
  2021.11.30.Tue.
 
- TO DO LIST 기능 구현 (ADD TO DO)
+ TO DO LIST 기능 구현 (Adding To Dos)
   - input을 submit 해도 새로고침이 일어나지 않음
   - 입력받은 input을 저장해 두기
   - input칸을 다시 비우기
@@ -43,4 +43,14 @@
   - 삭제 기능 구현
   - 원하는 To Do 항목을 삭제할 수 있는 기능 구현 
  
+ Saving To Dos
  
+ Loading To Dos
+ 
+ 2021.12.02.Thu.
+ 삭제 기능 구현 
+ 
+ 위치 정보에 따른 날씨 정보 제공 기능 구현
+  - 위치 정보 (navigator.geolocation)
+  - https://openweathermap.org/ 의 Weather API를 이용해서 날씨 정보 가져오기
+  - 
