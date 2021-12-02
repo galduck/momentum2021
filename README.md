@@ -43,14 +43,17 @@
   - 삭제 기능 구현
   - 원하는 To Do 항목을 삭제할 수 있는 기능 구현 
  
- Saving To Dos
- 
- Loading To Dos
+
  
  2021.12.02.Thu.
- 삭제 기능 구현 
  
  위치 정보에 따른 날씨 정보 제공 기능 구현
   - 위치 정보 (navigator.geolocation)
   - https://openweathermap.org/ 의 Weather API를 이용해서 날씨 정보 가져오기
-  - 
+  
+  
+ Saving To Dos
+ 
+ Loading To Dos
+ 
+ Deleting To Dos
