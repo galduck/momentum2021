@@ -1,6 +1,6 @@
 # momentum2021
  
- 작업기간 : 2021.11.29.Mon.
+ 작업기간 : 5days (2021.11.29.Mon. -2021.12.03.Fri.)
  사용 프로그램 : HTML, CSS, JavaScript
  
  2021.11.29.Mon.
